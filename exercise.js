@@ -37,9 +37,59 @@ let foo2, bar2;
 console.log(foo2);
 console.log(bar2);
 
-function sayHello() {
-    return // <--error will be here as it needs a ; and the way it is declared isn't correct
-    {
-      "Someone says hello";
+// function sayHello() {
+//     return // <--error will be here as it needs a ; and the way it is declared isn't correct
+//     {
+//       "Someone says hello";
+//     }
+//   }
+
+//exercise 4
+
+//1 - did a while loop but changed it to for
+for (let numA = 100; numA <= 200; numA++) {
+  console.log(`Number A = ${numA}`);
+}
+//2
+for (let a2 = 100; a2 <= 200; a2++) {
+    if (a2 % 2 == 0) {
+      console.log("-");
+    } else {
+      console.log("*");
     }
   }
+
+  //3
+  for (let j = 0; j < 10; j++) {
+    for (let k = 1; k <= 10; k++) {
+      console.log(k);
+    }
+ }  
+
+ //4
+
+
+
+ //exercise 5
+
+let strictA = true;
+let strictB = 1;
+console.log(strictA == strictB); //true
+console.log(strictA === strictB); //false
+
+console.log(strictA != strictB); //false
+console.log(strictA !== strictB);//true
+
+let age = 25;
+
+if (age >= 18 && age <= 65) {
+  console.log("You are in the age range");
+} else if (age < 18) {
+  console.log("You are too young for this");
+} else {
+  console.log("Catch");
+}
+
+let ageNew = 56;
+let result = ageNew >= 50 ? "You are old but young in heart" : "You are young";
+console.log(result);
