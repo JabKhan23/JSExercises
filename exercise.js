@@ -93,3 +93,74 @@ if (age >= 18 && age <= 65) {
 let ageNew = 56;
 let result = ageNew >= 50 ? "You are old but young in heart" : "You are young";
 console.log(result);
+
+//exercise 6 - js objects/arrays/JSON
+
+let darthVader = {
+    allegiance: "empire",
+    weapon: "lightsaber",
+    sith: true
+};
+
+console.log(darthVader);
+
+console.log(`Darth Vader's allegiance is to the ${darthVader.allegiance} not the republic`);
+console.log(`Darth Vader's weapon of choice is a ${darthVader.weapon}`);
+console.log(`Darth Vader is a Sith? ${darthVader.sith}`);
+console.log(`Darth Vader is a Jedi Master? ${darthVader.sith ? "false" : "true"}`);
+
+//gonna be looking at restructing code but just getting my head around with JS
+
+//exercise 7
+let user = {
+    name: "John",
+    years: 30
+    };
+    
+    let {name, years = age, isAdmin = false} = user;
+    
+    alert( name ); // John
+    alert( age ); // 30
+    alert( isAdmin ); // false
+
+//exercise 8
+
+// function submit() {
+//     let x = "hello";
+//     if (x == "hello") {
+//       let y = "nooo";
+//     }
+//     console.log(x); // 'hello'
+//     console.log(y); // 'error'
+//   }
+//   submit();
+
+//   function doSomething() {
+//     console.log(a);
+//     console.log(foo());
+//     let a = 1;
+//     function foo() {
+//       return 2;
+//     }
+//   }
+//   doSomething(); // will be a referece error "a" isn't declared initially
+
+  //exercise 9
+
+function subCalc(num1, num2) {
+    return num1 - num2;
+}
+
+console.log(subCalc(100,1000));
+
+let welcome = function(name,age,gender){
+    return console.log(`My name is ${name}, I am ${age} years old and of gender ${gender}`);
+    }
+   
+    welcome("Felix Cited",20,"Male");
+    welcome("Tom Yates",23,"Male");
+
+powerUp = (n1,n2) => Math.pow(n1,n2);
+
+console.log(powerUp(9,4));
+    
