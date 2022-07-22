@@ -163,4 +163,22 @@ let welcome = function(name,age,gender){
 powerUp = (n1,n2) => Math.pow(n1,n2);
 
 console.log(powerUp(9,4));
+
+const helloThere = (name, age) => {
+    console.log(name, age);
+    alert(`Hello ${name}, ${age}`)
+
+}
+const bye = (name, age) => {
+    console.log(name, age);
+    alert(`Bye ${name}, ${age}`)
+
+}
+
+const userInput =(callback) => {
+    let name = prompt("Name:")
+    let age = prompt("Age:")
+    callback(name, age);
+}
     
+userInput(helloThere);
